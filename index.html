@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galaxy</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ldqs-AjAAAAAMGX672d4n3yR9H3RQ3DWZ0uf8BS"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6Ldqs-AjAAAAAMGX672d4n3yR9H3RQ3DWZ0uf8BS', {action: 'login'}).then(function(token) {
+       
+    });
+});
+</script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <div class="redes-a">
@@ -32,6 +41,10 @@
                 <input  class="input-check" type="checkbox" name="" id="">
                 <span> Remember Me</span>
             </label>
+            <button class="g-recaptcha"
+data-sitekey="reCAPTCHA_site_key"
+data-callback='onSubmit'
+data-action='submit'>Submit</button>
             <button class="btn">Login</button>
         </form>
         <div class="final">
@@ -42,4 +55,9 @@
 
     
 </body>
+<script>
+    function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+    }
+    </script>
 </html>
