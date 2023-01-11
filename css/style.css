@@ -62,11 +62,12 @@ label span{
     font-weight: 700;
     margin-top: -0.5rem;
     cursor: pointer;
+    margin-top: -7em;
 }
 .final{
     display: flex;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
 }
 .final span{
@@ -117,4 +118,8 @@ opacity: 0.50;}
     margin-left: 60rem;
   
 }
-
+ .g-recaptcha{
+    transform: scale(0.74);
+    transform-origin: 0 0;
+    margin-left: -7em;
+ }
