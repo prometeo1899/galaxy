@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;0,500;1,100;1,200&display=swap');
 body{
-    background-image: url(https://c.wallhere.com/photos/44/47/1600x900_px_mountain_night_sky_stars_Trees-517931.jpg!d);
+    background: url(https://c.wallhere.com/photos/44/47/1600x900_px_mountain_night_sky_stars_Trees-517931.jpg!d ) center center no-repeat fixed;
     background-size: 100%;
+    background-size: cover;
 }
 
 .container{
@@ -67,7 +68,7 @@ label span{
 .final{
     display: flex;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
 .final span{
@@ -77,49 +78,60 @@ label span{
 a{
     text-decoration: none;
     font-weight: 500;
-    color: blue;
+    color: rgb(250, 250, 252);
 }
 a:hover{
 opacity: 0.30;}
-
-.redes-a{
+.redes{
     display: flex;
+    margin-top: -1.3em;
+    gap: 1em;
+    margin-left: 15em;
 }
 
-.redes-a img {
-    display: flex;
-    position: absolute;
-    font-display: flex;
+
+
+.redes img {
     width: 3rem;
-    gap: 2rem;
-    margin-top: 9rem;
-    margin-left: 52rem;
-  
 }
 
-
-
-.redes-b img {
-    position: absolute;
-    font-display: flex;
-    width: 3rem;
-    gap: 2rem;
-    margin-top: 9rem;
-    margin-left: 56rem;
-}
-
-
-.redes-c img {
-    position: absolute;
-    font-display: flex;
-    width: 3rem;
-    gap: 2rem;
-    margin-top: 9rem;
-    margin-left: 60rem;
-  
-}
- .g-recaptcha{
+.g-recaptcha{
     transform: scale(0.74);
     transform-origin: 0 0;
     margin-left: -7em;
- }
+}
+
+@media all and ( max-width:800px){
+    .container{
+        width: 20rem;
+        height: 35rem;
+    } ;
+
+    form{
+        width: 90%;
+        margin-top: 5rem;
+     
+    }
+.redes{
+    margin-left: 10rem;
+    margin-top: -0.8rem;
+}
+    .redes img {
+        width: 2em;
+     
+    }
+
+    label .input{
+        width: 15rem;
+    }
+    .g-recaptcha{
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        margin-left: 0;
+    }
+    .btn{
+  
+        align-self: center;
+        margin-top: -3rem;
+    }
+}
