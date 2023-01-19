@@ -105,11 +105,12 @@ opacity: 0.30;}
     .container{
         width: 20rem;
         height: 35rem;
+        margin-top: 0;
     } ;
 
     form{
         width: 90%;
-        margin-top: 5rem;
+     
      
     }
 .redes{
